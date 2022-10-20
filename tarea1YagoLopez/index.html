@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Yago Lopez Sousa">
+    <meta name="generator" content="Yago.1.0">
+    <title>Suzuki vuelva a cagarla</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+</head>
+<body>
+
+<header>
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Suzuki Motor Sports</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="https://moto.suzuki.es/">Motos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.suzuki-motogp.com/">MotoGP</a>
+                    </li>
+                    
+                </ul>
+                <form class="d-flex">
+                    <button class="reproductor"><img src="logotipo.png" height="70px" alt=""></button>
+                    <script>
+                        let boton = document.querySelector(".reproductor")
+
+                        boton.addEventListener("click", () => {
+                            let etiquetaAudio = document.createElement("audio")
+                            etiquetaAudio.setAttribute("src","motor_honda_motogp.mp3")
+                            etiquetaAudio.play()
+                        })
+                    </script>
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<main>
+
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="MotoGP-Andrea-Iannone-Team-Suzuki-Ecstar-Joan-Mir_1-1690974284.jpg" width="" height="">
+
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                        <h1>Andrea Iannone</h1>
+                        <p>Completó 45 giros al largo circuito qatarí -la distancia de dos Grandes Premios, se quedó a apenas una décima del mejor crono logrado por Viñales en la pretemporada de 2017</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img src="prueba1.jpg" width="1%" >
+
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 >Joan Mir</h1>
+                        <p> Actual Campeón del Mundo de Moto</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+              <img src="alexrins.jpg" height="2%">
+
+                <div class="container">
+                    <div class="carousel-caption text-end">
+                        <h1>Alex Rins</h1>
+                        <p>Ha sido dos veces subcampeón del mundo, de Moto3 en 2013 y Moto2 en 2015.</p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+
+    <!-- Marketing messaging and featurettes
+    ================================================== -->
+    <!-- Wrap the rest of the page in another container to center all the content. -->
+
+    <div class="container marketing">
+
+        <!-- Three columns of text below the carousel heading-->
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="joan-mir-team-suzuki-motogp-1.webp" width="300px">
+
+                <h2>Joan Mir</h2>
+                <p>HOBBIES: SKI, SKIMO, CYCLING.
+                    LIKES: RACING CARS AND SAILING.
+                    DISLIKES: LOSING TIME OR DOING NOTHING.
+                    FAVOURITE MOVIE: GLADIATOR.
+                    FAVOURITE FOOD: JAPANESE FOOD.
+                    FAVOURITE CIRCUIT: PHILLIP ISLAND.</p>
+
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+              <img src="alex-rins-team-suzuki-motogp-1.webp" width="300px">
+                <h2>Alex rins</h2>
+                <p>HOBBIES: ROLLERBLADING, SKIMO, CYCLING.
+                    LIKES: RALLYING AND GT CHAMPIONSHIPS.
+                    DISLIKES: DOING NOTHING.
+                    FAVOURITE MOVIE: CREED.
+                    FAVOURITE FOOD: FRENCH FRIES.
+                    FAVOURITE CIRCUIT: PHILLIP ISLAND / MISANO / MOTORLAND ARAGON</p>
+
+            </div><!-- /.col-lg-4 -->
+            <div class="col-lg-4">
+               <img src="8db7c41f6cfb40aaa07ce25cbd32b93f-138133896.webp" width="300px">
+
+                <h2>Andrea Lannone </h2>
+                <p> PROFESSIONAL MOTORCYCLE RACER WHO COMPETED IN THE MOTOGP WORLD CHAMPIONSHIP FROM 2013 TO 2019. IANNONE IS A RACE WINNER IN MOTOGP, MOTO2 AND 125 CC WORLD CHAMPIONSHIPS. AFTER WINNING 4 RACES IN 125 CC WORLD CHAMPIONSHIP AND FINISHING 7TH OVERALL IN 2009 IANNONE MADE THE MOVE TO MOTO2 WORLD CHAMPIONSHIP IN 2010.</p>
+
+            </div><!-- /.col-lg-4 -->
+        </div><!-- /.row -->
+
+
+        <!-- START THE FEATURETTES -->
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Suzuki Hayabusa 1999 <span class="text-muted">Velocidad máxima:299 km/h</span></h2>
+                <p class="lead">Hayabusa significa halcón en japonés, y fue una moto lanzada en respuesta a la Honda CBR 1100 XX, que en 1996 logró superar los 287 km/h. Suzuki quiso aniquilar a su competencia y se embarcó en el desarrollo de la moto más potente de la historia. La Suzuki GSX1300R "Hayabusa" montaba un motor de cuatro cilindros y 1.298 centímetros cúbicos, capaz de desarrollar 173 CV. Era un moto de grandes dimensiones, dotada de un carenado diseñado con la máxima eficiencia aerodinámica en mente. Un carenado que le otorgaba una imagen casi sacada de un cómic manga, un diseño muy característico y reconocible.</p>
+            </div>
+            <div class="col-md-5">
+              <img src="5-mejores-suzuki-historiahayabusa-logo-2010721.webp" width="550px" height="500px"/>
+
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7 order-md-2">
+                <h2 class="featurette-heading">Suzuki gsx rr MotoGP2022 </h2>
+                <p class="lead"> Suzuki apuesta por el azul como color predominante en su GSX-RR. También aparece un gis plateado sobre el que se posa el nombre del equipo. La parte novedosa es la incorporación de pinceladas negras en la parte frontal.</p>
+            </div>
+            <div class="col-md-5 order-md-1">
+                <img src="suzuki-gsx-rr-team-suzuki-moto-1.webp" height="400px" alt="">
+
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <div class="row featurette">
+            <div class="col-md-7">
+                <h2 class="featurette-heading">Pedri queda con mir </h2>
+                <p class="lead">El campeón del mundo de MotoGP, aficionado al Barcelona, y el futbolista, seguidor de las motos, compartieron una distendida jornada en el Circuit de Barcelona-Catalunya.</p>
+            </div>
+            <div class="col-md-5">
+                <img src="pedri.jpg" height="350px" alt="">
+            </div>
+        </div>
+
+        <hr class="featurette-divider">
+
+        <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
+
+
+    <!-- FOOTER -->
+    <footer class="container">
+        <p class="float-end"><a href="#">Back to top</a></p>
+        <p>&copy; 2021–2022 Company, Yago. &middot; <a >Privacy</a> &middot; <a >Terms</a></p>
+    </footer>
+</main>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
